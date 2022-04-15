@@ -39,18 +39,18 @@ STATUS=Config.STATUS
 insta = Config.L
 buttons=InlineKeyboardMarkup(
     [
-        [
-            InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-            InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
-        ],
-        [
-            InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-            InlineKeyboardButton("🧩Deploy Own Bot", url="https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot")
-        ],
-        [
-            InlineKeyboardButton("👨🏼‍🦯How To Use?", callback_data="help#subin"),
-            InlineKeyboardButton("⚙️Update Channel", url="https://t.me/subin_works")
-        ]
+       [
+						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/codermert'),
+						InlineKeyboardButton("🤖Yazılım Satışı", url="https://t.me/codermert")
+					],
+                    [
+                        InlineKeyboardButton("🔗Turkcell Developer", url="https://gelecegiyazanlar.turkcell.com.tr/kisi/codermert"),
+						
+                    ],
+                    [
+                        InlineKeyboardButton("👨🏼‍🦯Komutlar?", callback_data="help#subin"),
+						
+                    ]
 					
     ]
     )
@@ -70,7 +70,7 @@ async def post(bot, message):
     text=message.text
     username=USER
     if 1 not in STATUS:
-        await message.reply_text("You Must Login First /login ")
+        await message.reply_text("Giriş yapman lazım")
         return
     if " " in text:
         cmd, username = text.split(' ')
