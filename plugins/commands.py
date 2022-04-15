@@ -43,17 +43,16 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-						InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
+						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/codermert'),
+						InlineKeyboardButton("🤖Yazılım Satışı", url="https://t.me/codermert")
 					],
                     [
-                        InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-						InlineKeyboardButton("🧩Deploy Own Bot", url="https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot")
+                        InlineKeyboardButton("🔗Turkcell Developer", url="https://gelecegiyazanlar.turkcell.com.tr/kisi/codermert"),
+						
                     ],
                     [
-                        InlineKeyboardButton("👨🏼‍🦯How To Use?", callback_data="help#subin"),
-						InlineKeyboardButton("⚙️Update Channel", url="https://t.me/subin_works")
-
+                        InlineKeyboardButton("👨🏼‍🦯Komutlar?", callback_data="help#subin"),
+						
                     ]
 					
 				]
@@ -66,16 +65,16 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-						InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122"),
+						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/codermert'),
+						InlineKeyboardButton("🤖Yazılım Satışı", url="https://t.me/codermert")
 					],
                     [
-                        InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot")
+                        InlineKeyboardButton("🔗Turkcell Developer", url="https://gelecegiyazanlar.turkcell.com.tr/kisi/codermert"),
+						
                     ],
                     [
-                        InlineKeyboardButton("👨🏼‍🦯How To Use?", callback_data="help#subin"),
-						InlineKeyboardButton("⚙️Update Channel", url="https://t.me/subin_works")
-
+                        InlineKeyboardButton("👨🏼‍🦯Komutlar?", callback_data="help#subin"),
+						
                     ]
 					
 				]
@@ -91,15 +90,17 @@ async def help(bot, cmd):
 		reply_markup=InlineKeyboardMarkup(
 			[
 				[
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-					InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122"),
-					InlineKeyboardButton("⚙️Update Channel", url="https://t.me/subin_works")
-					
-				],
-				[
-					InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-					InlineKeyboardButton("🧩Deploy Own Bot", url="https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot")
-				]
+						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/codermert'),
+						InlineKeyboardButton("🤖Yazılım Satışı", url="https://t.me/codermert")
+					],
+                    [
+                        InlineKeyboardButton("🔗Turkcell Developer", url="https://gelecegiyazanlar.turkcell.com.tr/kisi/codermert"),
+						
+                    ],
+                    [
+                        InlineKeyboardButton("👨🏼‍🦯Komutlar?", callback_data="help#subin"),
+						
+                    ]
 			]
 			)
 		)
@@ -113,17 +114,16 @@ async def stop(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-						InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")	
+						InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/codermert'),
+						InlineKeyboardButton("🤖Yazılım Satışı", url="https://t.me/codermert")
 					],
                     [
-                        InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-						InlineKeyboardButton("🧩Deploy Own Bot", url="https://heroku.com/deploy?template=https://github.com/subinps/Instagram-Bot")
+                        InlineKeyboardButton("🔗Turkcell Developer", url="https://gelecegiyazanlar.turkcell.com.tr/kisi/codermert"),
+						
                     ],
                     [
-                        InlineKeyboardButton("👨🏼‍🦯How To Use?", callback_data="help#subin"),
-						InlineKeyboardButton("⚙️Update Channel", url="https://t.me/subin_works")
-
+                        InlineKeyboardButton("👨🏼‍🦯Komutlar?", callback_data="help#subin"),
+						
                     ]
 					
 				]
@@ -131,7 +131,7 @@ async def stop(bot, cmd):
 		)
 		return
 	msg = await bot.send_message(
-		text="Restarting your bot..",
+		text="Bot yeniden başlatılıyor..",
 		chat_id=cmd.from_user.id
 		)
 	await asyncio.sleep(2)
